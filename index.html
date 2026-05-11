@@ -49,6 +49,39 @@
     font-size: 0.95rem;
     margin-bottom: 5px;
 }
+footer {
+    background: var(--primary);
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.contact-links {
+    margin-top: 15px;
+}
+
+.contact-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.contact-links a:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+.contact-email {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
 
         @media (max-width: 600px) {
             .pub-card { flex-direction: column; align-items: center; }
@@ -64,7 +97,7 @@
 <div class="intro-text">
     <div class="container">
         <p> 
-            Hi, my name is Lars Krupp. I am a researcher and PhD student at RPTU Kaiserslautern-Landau and DFKI. 
+            Hi, my name is Lars Krupp. I am a researcher and PhD student at RPTU Kaiserslautern-Landau and DFKI. <br><br>
             This curated list of my publications, focuses on the intersection on the application of LLM-based systems for education and efforts in evaluating the energy cost incurred LLM-based systems. 
             I believe that LLM-based systems can only have positive impact if their benefits outweigh the energy costs of running them.
         </p>
@@ -74,6 +107,7 @@
 <nav>
     <a href="#education">AI in Education</a>
     <a href="#energy">Energy Estimation & Benchmarking</a>
+    <a href="#contact">Contact</a>
 </nav>
 
 <div class="container">
@@ -137,8 +171,26 @@
             </div>
         </div>
     </section>
-
 </div>
+
+<footer id="contact">
+    <div class="container">
+        <h2 style="color: #fff;">Contact</h2>
+        <span class="contact-email">📩 lars.krupp[at]dfki.de</span>
+
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/lars-krupp-400a86273/" target="_blank">LinkedIn</a>
+            <a href="https://scholar.google.de/citations?user=Lmt7y2EAAAAJ" target="_blank">Google Scholar</a>
+            <a href="https://github.com/larsdfki" target="_blank">GitHub</a>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.6;">
+            &copy; 2026 Lars Krupp. Built with GitHub Pages.
+        </p>
+    </div>
+</footer>
+
+
 
 
 </body>
